@@ -1,0 +1,13 @@
+#@data/values
+---
+name: minio
+vm:
+  name: minio
+  namespace: tanzuns1
+  imagename: centos-stream-8-vmservice-v1alpha1-1619529007339
+  classname: best-effort-medium
+  network_type: nsx-t # or vsphere-distributed
+  network_name: "" # kubectl get network -n namespace
+storage:
+  class_name: tanzu
+  pvc_size: 190Gi
